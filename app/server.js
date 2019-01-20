@@ -9,7 +9,7 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 require("./app/routing/apiroutes.js")(app);
-require("./app/routing/htmlroutes.js")(app);
+require("./app/routing/htmlrouting.js")(app);
 
 app.listen(PORT, function () {
     console.log("App listening on PORT: " + PORT);
